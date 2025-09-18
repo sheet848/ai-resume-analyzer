@@ -27,7 +27,7 @@ const Auth = () => {
                         <h2>Log In to Continue Your Job Journey</h2>
                     </div>
 
-                    <div>
+                    <div className="items-center mx-auto">
                        {isLoading ? (
                             <button className="auth-button animate-pulse">
                                 <p>Signing you in...</p>
