@@ -1,3 +1,41 @@
+# AI Resume Analyzer  
+
+An **AI-powered web application** that analyzes resumes and provides actionable feedback on structure, skills, and presentation.  
+Built using **Puter.js** and inspired by the [JS Mastery YouTube tutorial](https://www.youtube.com/c/javascriptmastery).
+
+---
+
+## 🚀 Features
+- Upload resumes for AI-based analysis  
+- Get feedback on **skills, structure, and presentation**  
+- Responsive, clean, and accessible UI  
+- File handling & storage with **Puter.js**  
+- Integration with AI for text evaluation  
+
+---
+
+## 🛠️ Tech Stack
+- **TypeScript (ES6+)**  
+- **Puter.js** for file handling and backend logic  
+- **HTML5 / CSS3** for responsive UI  
+- **AI API integration** for text analysis  
+
+---
+
+## 📂 Project Structure
+```
+ai-resume-analyzer/
+│── public/ # Static assets
+│── src/ # Application source code
+│ ├── components/ # Reusable UI components
+│ ├── pages/ # Main pages
+│ └── utils/ # Helper functions & Puter.js logic
+│── index.html # Entry point
+│── style.css # Global styles
+│── main.js # App logic
+│── README.md # Project documentation
+```
+
 # Welcome to React Router!
 
 A modern, production-ready template for building full-stack React applications using React Router.
