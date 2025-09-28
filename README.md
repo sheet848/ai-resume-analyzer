@@ -37,12 +37,15 @@ ai-resume-analyzer/
 ```
 
 ## How It Works
-1. User Authentication via Puter :
-2. Upload Resume:
-3. Conveet PDF to Image:
-4. Text Extraction:
-5. AI Analysis:
-6. Feedback Display: 
+1. **User Authentication via Puter:** User can login or Sign Up using Puter
+2. **Upload Resume:** User selects and uploads a resume PDF.
+3. **Conveet PDF to Image:** 
+4. **Text Extraction:** Resume text is parsed using file handling APIs.
+5. **AI Analysis:** Extracted content is sent for AI-based analysis.
+6. **Feedback Display:** Results are presented in a structured format:
+      - Skills Detected
+      - Weaknesses
+      - Suggested Improvements
 
 ## Screenshots  
 
