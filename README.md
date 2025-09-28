@@ -1,125 +1,51 @@
-# AI Resume Analyzer  
+# AI Resume Analyzer
+An AI-powered Resume Analyzer built with Puter.js, inspired by the JS Mastery tutorial (reference project). This app allows users to upload resumes, extract content, and receive intelligent analysis and feedback on skills, strengths, and improvements.
 
-An **AI-powered web application** that analyzes resumes and provides actionable feedback on structure, skills, and presentation.  
-Built using **Puter.js** and inspired by the [JS Mastery YouTube tutorial](https://www.youtube.com/c/javascriptmastery).
+## Features
+- **User Authentication:** Handle authentication entirely in the browser using Puter.js—no backend or setup required.
+- **Resume Upload & Storage:** Let users upload and store all their resumes in one place, safely and reliably.
+- **AI Resume Matching:** Provide a job listing and get an ATS score with custom feedback tailored to each resume.
+- **Reusable, modern UI:** Built with clean, consistent components for a great-looking and maintainable interface.
+- **Code Reusability:** Leverage reusable components and a modular codebase for efficient development.
+- **Cross-Device Compatibility:** Fully responsive design that works seamlessly across all devices.
+- **Modern UI/UX:** Clean, responsive design built with Tailwind CSS and shadcn/ui for a sleek user experience.
 
----
+## Tech Stack
+- **React** is a popular open‑source JavaScript library for building user interfaces using reusable components and a virtual DOM, enabling efficient, dynamic single-page and native apps.
+- **React Router v7** is the go‑to routing library for React apps, offering nested routes, data loaders/actions, error boundaries, code splitting, and SSR support—all with a smooth upgrade path from v6.
+- **Puter.js** is a tiny client‑side SDK that adds serverless auth, storage, database, and AI (GPT, Claude, DALL·E, OCR…) straight into your browser app—no backend needed and costs borne by users.
+- **Tailwind CSS** is a utility-first CSS framework that allows developers to design custom user interfaces by applying low-level utility classes directly in HTML, streamlining the design process.
+- **TypeScript** is a superset of JavaScript that adds static typing, providing better tooling, code quality, and error detection for developers, making it ideal for building large-scale applications.
+- **Vite** is a fast build tool and dev server using native ES modules for instant startup, hot‑module replacement, and Rollup‑powered production builds—perfect for modern web development.
+- **Zustand** is a minimal, hook-based state management library for React. It lets you manage global state with zero boilerplate, no context providers, and excellent performance through selective state subscriptions.
 
-## 🚀 Features
-- Upload resumes for AI-based analysis  
-- Get feedback on **skills, structure, and presentation**  
-- Responsive, clean, and accessible UI  
-- File handling & storage with **Puter.js**  
-- Integration with AI for text evaluation  
+## Project Structure
 
----
-
-## 🛠️ Tech Stack
-- **TypeScript (ES6+)**  
-- **Puter.js** for file handling and backend logic  
-- **HTML5 / CSS3** for responsive UI  
-- **AI API integration** for text analysis  
-
----
-
-## 📂 Project Structure
 ```
 ai-resume-analyzer/
-│── public/ # Static assets
-│── src/ # Application source code
+|── app/ # Application source code
 │ ├── components/ # Reusable UI components
-│ ├── pages/ # Main pages
-│ └── utils/ # Helper functions & Puter.js logic
-│── index.html # Entry point
-│── style.css # Global styles
-│── main.js # App logic
+│ ├── constants/ # ATS page constant content
+│ ├── lib/ # convert PDFtoImg / handle Puter code
+│ ├── routes/ # Main pages & Navigation
+│ |  ├── app.css # Global CSS
+│ |  ├── root.tsx # Root page
+│ |  ├── routes.ts # react route navigation
+│── public/ # Static assets
+|── types/ # typescript interfaces
 │── README.md # Project documentation
 ```
 
-# Welcome to React Router!
+## How It Works
+1. User Authentication via Puter :
+2. Upload Resume:
+3. Conveet PDF to Image:
+4. Text Extraction:
+5. AI Analysis:
+6. Feedback Display: 
 
-A modern, production-ready template for building full-stack React applications using React Router.
+## Screenshots  
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+<img width="1047" height="905" alt="Screenshot 2025-09-28 155249" src="https://github.com/user-attachments/assets/0502e9f9-7f1e-4280-b2e5-4ccb7b403dad" />
 
-## Features
-
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
-
-## Getting Started
-
-### Installation
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+<img width="961" height="855" alt="Screenshot 2025-09-28 160026" src="https://github.com/user-attachments/assets/3fe11a5d-f992-4e5c-baef-07332a52fd44" />
