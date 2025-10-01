@@ -8,19 +8,19 @@ interface FileUploaderProps {
 
 const FileUploader = ({ onFileSelect } : FileUploaderProps ) => {
 
-     const maxFileSize = 20 * 1024 * 1024; // 20MB in bytes
-
     const onDrop = useCallback((acceptedFiles : File[])  => {
         // Do something with the files
         const file = acceptedFiles[0] || null;
         onFileSelect?.(file);
     }, [onFileSelect]);
 
+    const maxFileSize = 20 * 1024 * 1024; // 20MB in bytes
+
     const { getRootProps, getInputProps, isDragActive, acceptedFiles } = useDropzone({ 
         onDrop,
         multiple: false,
         accept: { 'application/pdf': ['.pdf']},
-        maxSize: 20 * 1024 * 1024,
+        maxSize: maxFileSize,
     })
 
     const file = acceptedFiles[0] || null;
@@ -29,6 +29,7 @@ const FileUploader = ({ onFileSelect } : FileUploaderProps ) => {
     return (
         <div className="w-full gradient-border">
             <div {...getRootProps()}>
+                <input {...getInputProps()} />
                 
             <div className="space-y-4 cursor-pointer">
                 {
@@ -45,9 +46,7 @@ const FileUploader = ({ onFileSelect } : FileUploaderProps ) => {
                                     </p>
                                 </div>
                             </div>
-                            <button className="p-2 cursor-pointer" onClick={(e) => {
-                                onFileSelect?.(null)
-                            }}>
+                            <button className="p-2 cursor-pointer" onClick={() => {onFileSelect?.(null)}}>
                                 <img src="/icons/cross.svg" alt="remove" className="w-4 h-4" />
                             </button>
                         </div>
