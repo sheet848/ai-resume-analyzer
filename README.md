@@ -464,6 +464,7 @@ This project is open source and available under the [MIT License](https://claude
 - **Anthropic** - For Claude AI models
 - **React Team** - For React 19 and React Router
 - **Tailwind Labs** - For Tailwind CSS
+- **Adrian from JavaScript Mastery** for the tutorial inspiration
 
 ---
 
