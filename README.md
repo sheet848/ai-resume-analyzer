@@ -2,8 +2,6 @@
 
 An intelligent, serverless AI-powered resume analyzer that provides real-time ATS (Applicant Tracking System) scores and personalized feedback to help job seekers optimize their resumes for specific positions.
 
-![AI Resume Analyzer](https://claude.ai/chat/public/images/hero-preview.png)
-
 ## 🌟 Overview
 
 Stop sending resumes into the void. Get instant, AI-powered feedback on how well your resume matches any job posting, with detailed suggestions on how to improve your chances of landing an interview.
@@ -454,10 +452,6 @@ All custom styles in `app/app.css`:
 - [ ] Cover letter generation
 - [ ] Interview prep suggestions
 
-## 📄 License
-
-This project is open source and available under the [MIT License](https://claude.ai/chat/LICENSE).
-
 ## 🙏 Acknowledgments
 
 - **Puter.js** - For providing an incredible serverless platform
@@ -469,8 +463,6 @@ This project is open source and available under the [MIT License](https://claude
 ---
 
 **Built with ❤️ to help job seekers land their dream jobs**
-
-**Try it live:** [Your Puter App URL]
 
 ## Screenshots  
 
